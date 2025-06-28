@@ -5,6 +5,9 @@ zapatollas_restantes = 20
 lista_de_reservas = [
     {"nombre": "placeholder", "zapatillas_reservadas": 0}
 ]
+reserva = {
+    
+}
 input_user = 0
 busca_reserva = False
 nombre = 0
