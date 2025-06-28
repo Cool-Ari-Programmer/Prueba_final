@@ -1,6 +1,5 @@
 # Variables ---------------------
 
-
 zapatollas_reservadas = 0
 zapatollas_restantes = 20
 lista_de_reservas = [
@@ -68,6 +67,7 @@ while True:
                         elif input_user == 2:
                             
                             print("Usted a elegido no, no se le a cobrado")
+                            break
                         else:
                             print("Porfavor ingresar una opcion valida")
         if not busca_reserva:
