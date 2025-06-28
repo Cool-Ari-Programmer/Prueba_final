@@ -9,6 +9,8 @@ input_user = 0
 busca_reserva = False
 nombre = 0
 nombre_buscar = 0
+frase_usuario = "plaiholdel"
+frase_secreta = "EstoyEnListaDeReserva"
 
 # Variables/ ---------------------
 
@@ -31,13 +33,17 @@ while True:
     if input_user == 1:
         if zapatollas_restantes > 0:
             nombre = input("Ingresa tu nombre: ")
-            reserva = {
+            frase_usuario = input("Ingresa la frase secreta: ")
+            if frase_usuario == frase_secreta:
+                reserva = {
                 "nombre": nombre,
                 "zapatillas_reservadas": 1
-            }
-            lista_de_reservas.append(reserva)
-            zapatollas_reservadas = zapatollas_reservadas + 1
-            zapatollas_restantes = zapatollas_restantes - 1
+                }
+                lista_de_reservas.append(reserva)
+                zapatollas_reservadas = zapatollas_reservadas + 1
+                zapatollas_restantes = zapatollas_restantes - 1
+            else:
+                print("La frase secreta esta mala, no se le a cobrado ni hecho la reserva")
         else:
             print("No hay zapatillas disponibles para reservar.")
 
